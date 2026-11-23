@@ -3,10 +3,12 @@
 :root{color:#24292e;fill:currentColor}@media(prefers-color-scheme:dark){:root{color:#e6edf3}}
 text{font:400 14px 'Segoe UI',Ubuntu,sans-serif}.profile-next{font-size:11px}.b{font-size:18px;font-weight:600;stroke:currentColor}
 @media(prefers-reduced-motion:no-preference){
-.m{animation:arrive var(--t,1.35s) cubic-bezier(.22,.58,.12,.98) var(--d,0s) both}
-.l{--x:-8px}.r{--x:8px;--y:3px;--d:.14s}.logo{--y:4px;--d:.22s;--t:1.55s}.caption{--y:5px;--d:.52s}
-/* Start after .caption's .52s delay + 1.35s entrance. */
-.profile{--y:5px;--d:1.87s;--t:.95s}.profile-next{--d:2.82s}
+:root{--entrance-time:1.35s;--caption-delay:.52s;--profile-time:1s}
+.m{animation:arrive var(--t,var(--entrance-time)) cubic-bezier(.22,.58,.12,.98) var(--d,0s) both}
+.l{--x:-8px}.r{--x:8px;--y:3px;--d:.14s}.logo{--y:4px;--d:.22s;--t:1.55s}.caption{--y:5px;--d:var(--caption-delay)}
+/* Chain the lines to the end of the caption, the last banner entrance. */
+.profile{--y:5px;--d:calc(var(--caption-delay) + var(--entrance-time));--t:var(--profile-time)}
+.profile-next{--d:calc(var(--caption-delay) + var(--entrance-time) + var(--profile-time))}
 .pulse{animation:breathe 4.6s ease-in-out 2.1s infinite}
 }
 @keyframes arrive{from{opacity:0;transform:translate(var(--x,0px),var(--y,-3px))}68%{transform:translate(calc(var(--x,0px)*-.16),calc(var(--y,-3px)*-.16))}to{opacity:1;transform:translate(0,0)}}
