@@ -4,13 +4,13 @@
 text{font:400 14px 'Segoe UI',Ubuntu,sans-serif}.b{font-size:18px;font-weight:600;stroke:currentColor}
 @media(prefers-reduced-motion:no-preference){
 .m{animation:arrive var(--t,.62s) cubic-bezier(.22,.58,.12,.98) var(--d,0s) both}
-.r{--y:8px;--d:.1s}.logo{--y:4px;--d:.15s;--t:.72s}.caption{--y:5px;--d:.3s}
+.l{--x:-8px}.r{--x:8px;--y:3px;--d:.1s}.logo{--y:4px;--d:.15s;--t:.72s}.caption{--y:5px;--d:.3s}
 .pulse{animation:breathe 1.65s ease-in-out 1.15s 2}
 }
-@keyframes arrive{from{opacity:.62;transform:translateY(var(--y,-8px))}68%{transform:translateY(calc(var(--y,-8px)*-.16))}to{opacity:1;transform:translateY(0)}}
+@keyframes arrive{from{opacity:.62;transform:translate(var(--x,0px),var(--y,-3px))}68%{transform:translate(calc(var(--x,0px)*-.16),calc(var(--y,-3px)*-.16))}to{opacity:1;transform:translate(0,0)}}
 @keyframes breathe{0%,100%{opacity:1}48%{opacity:.73}}
 </style>
-<g transform="translate(25 20)"><g class="m"><text class="b pulse">「</text></g></g>
+<g transform="translate(25 20)"><g class="m l"><text class="b pulse">「</text></g></g>
 <g transform="translate(125 25)"><g class="m logo"><path transform="scale(.06)" d="M2369.744 0v26.932h-53.854v26.931h-26.931V161.58h26.931V134.65h53.854v-26.932h26.931V0h-26.931zm-538.575 161.57h-53.854v26.932h-53.854v26.932h-26.931V107.717h-26.932V80.785h-53.854V53.854h-26.931v215.434h-26.932v26.931h-53.854v26.932h-53.853v26.931h-53.854V457.8h53.854v-26.931h53.853v-26.932h53.854v-26.932h26.932v484.722h26.931v26.932h53.854v26.931h26.932V323.151h26.931v-26.932h53.854v-26.931h53.854v-26.932h53.853V134.639h-53.853v26.932zm-1400.31 0h-53.855v26.932h-53.853v26.932h-53.854v26.931h-53.854v26.932H161.59v26.932h-53.854v26.931H53.882v26.932H.03v646.292h53.853v26.932h53.854V592.457h53.854v-26.931h53.853v-26.932h53.854v-26.931h53.854v-80.786h-53.854v26.932h-53.854v26.931H161.59v26.932h-53.854V403.955h53.854v-26.932h53.853v-26.931h53.854V323.16h53.854V296.23h53.853v-26.932h53.854v-26.932h53.854V134.65h-53.854v26.922zm700.154 0h-53.853V592.43h-53.854v26.931h-53.854v26.932H915.6v26.932h-53.854v26.931H807.89V323.151h-53.854v26.931h-53.853v430.859h53.853v26.931h53.854v26.932h53.854v-26.932h53.854v-26.931h53.853v-26.932h53.854v-26.932h53.854v-26.931h53.853v-26.932h53.854V134.64h-53.854v26.932zm1238.73 80.786h-53.853v26.932h-26.931v592.438h26.931v-26.932h53.854v-26.931h26.931V215.424h-26.931v26.932z"/></g></g>
 <g transform="translate(132 100)"><text class="m caption">ᴀʟʟ ᴏғ ᴛʜɪs, ᴊᴜsᴛ ʟᴏɴᴇʟʏ.</text></g>
 <g transform="translate(357 112)"><g class="m r"><text class="b pulse">」</text></g></g>
