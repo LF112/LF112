@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://www.lf112.net">
-        <img alt="futi" src="./futi.svg">
+        <img alt="futi" src="./futi.svg" width="400" height="120">
     </a>
 </p>
 
